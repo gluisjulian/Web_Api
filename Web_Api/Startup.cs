@@ -32,10 +32,17 @@ namespace Web_Api
 
             services.AddControllers();
 
+            //Injecao de dependencia -> Conexao com banco MYSQL
             var connection = Configuration["MysqlConnection:MysqlConnectionString"];
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 25));
             services.AddDbContext<MySqlContext>(options => options.UseMySql(connection, serverVersion));
 
+
+            //API Versioning
+            services.AddApiVersioning();
+
+
+            //Injeção de dependencia
             services.AddScoped<IPersonService, IPersonServiceImplementation>();
 
         }

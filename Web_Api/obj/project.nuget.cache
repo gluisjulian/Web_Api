@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WTZk8d374KcN08t1F/Ez3Yb4UQCQkLFySgnhR12Y+odZKPBFTOm/DmlDnoQpXk6THY5fXP6tJaM5R1sXbf/AqA==",
+  "dgSpecHash": "8pBkV9pW1snGCJ8ovZWU1juNnCuvpVTP9vdKY9E+STb5mFZkYVAj/1P3ZlWXaFuvhpFzgbgxOO8c2cUwTERL2A==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\Udemy\\Web_Api\\Web_Api\\Web_Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Inspiron\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\Inspiron\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.7\\microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
     "C:\\Users\\Inspiron\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.7\\microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
     "C:\\Users\\Inspiron\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.7\\microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",

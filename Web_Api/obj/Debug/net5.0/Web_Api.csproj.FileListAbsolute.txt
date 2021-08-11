@@ -29,3 +29,5 @@ C:\Projetos\Udemy\Web_Api\Web_Api\obj\Debug\net5.0\Web_Api.dll
 C:\Projetos\Udemy\Web_Api\Web_Api\obj\Debug\net5.0\ref\Web_Api.dll
 C:\Projetos\Udemy\Web_Api\Web_Api\obj\Debug\net5.0\Web_Api.pdb
 C:\Projetos\Udemy\Web_Api\Web_Api\obj\Debug\net5.0\Web_Api.genruntimeconfig.cache
+C:\Projetos\Udemy\Web_Api\Web_Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Projetos\Udemy\Web_Api\Web_Api\obj\Debug\net5.0\Web_Api.MvcApplicationPartsAssemblyInfo.cs
