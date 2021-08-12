@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 using Web_Api.Model;
 using Web_Api.Model.Context;
 
-namespace Web_Api.Services.Implementation
+namespace Web_Api.Repository.Implementation
 {
-    public class IPersonServiceImplementation : IPersonService
+    public class IPersonRepositoryImplementation : IPersonRepository
     {
         private MySqlContext _context;
 
         //Construtor
-        public IPersonServiceImplementation(MySqlContext context)
+        public IPersonRepositoryImplementation(MySqlContext context)
         {
             _context = context;
         }
@@ -92,7 +92,7 @@ namespace Web_Api.Services.Implementation
             }
         }
 
-        private bool Exists(long id)
+        public bool Exists(long id)
         {
             return _context.Persons.Any(p => p.Id.Equals(id));
         }

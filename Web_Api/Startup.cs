@@ -12,8 +12,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Web_Api.Model.Context;
-using Web_Api.Services;
-using Web_Api.Services.Implementation;
+using Web_Api.Business;
+using Web_Api.Business.Implementation;
+using Web_Api.Repository;
+using Web_Api.Repository.Implementation;
 
 namespace Web_Api
 {
@@ -43,7 +45,8 @@ namespace Web_Api
 
 
             //Injeção de dependencia
-            services.AddScoped<IPersonService, IPersonServiceImplementation>();
+            services.AddScoped<IPersonBusiness, IPersonBusinessImplementation>();
+            services.AddScoped<IPersonRepository, IPersonRepositoryImplementation>();
 
         }
 
