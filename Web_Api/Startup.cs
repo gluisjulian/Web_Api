@@ -43,10 +43,10 @@ namespace Web_Api
             services.AddDbContext<MySqlContext>(options => options.UseMySql(connection));
 
 
-            if (Environment.IsDevelopment())
-            {
-                MigrateDatabase(connection);
-            }
+            //if (Environment.IsDevelopment())
+            //{
+            //    MigrateDatabase(connection);
+            //}
 
 
 

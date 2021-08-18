@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  db:
+    image: web-api-db
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    restart: always
+    build:
+      context: .
+      dockerfile: db/Dockerfile    
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: rest
+    ports:
+      - "3308:3306"
+
+  web-api:
+    image: web-api-api
+    build:
+      context: .
+      dockerfile: Web_Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "44300:80"
+    depends_on:
+      - db
+
+networks: 
+    web-api-network:
+        driver: bridge
